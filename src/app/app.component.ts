@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { FooterComponent } from './components/todo/footer.component';
+import { TodoComponent } from './components/todo/todo.component';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
-  selector: 'org-root',
+  imports: [TodoComponent, FooterComponent],
+  selector: 'personal-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'org';
+  title = 'personal';
 }
