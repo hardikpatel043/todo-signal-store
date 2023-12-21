@@ -25,13 +25,6 @@ import { ThemeSwitcherComponent } from '../theme-switcher/theme-switcher.compone
     }
   }
   
-  @media (max-width: 40em) {
-    .title {
-      font-size: 2.5rem;
-      line-height: 2rem;
-      letter-spacing: 1.3rem;
-    }
-  }
   `,
 })
 export class TodoHeaderComponent { }

@@ -40,6 +40,6 @@ export class TodoService {
                 "text": "Complete Todo App on Frontend Mentor",
                 "id": 6
             }
-        ]).pipe(delay(5000)));
+        ]).pipe(delay(5)));
     }
 }

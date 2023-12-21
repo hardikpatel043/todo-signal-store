@@ -10,7 +10,7 @@
   height: 2.4rem;
   width: 2.4rem;
   margin-right: 2.4rem;
-  background: linear-gradient(var(--bg-todo-color), var(--bg-todo-color))
+  background: linear-gradient(var(--bg-light-color), var(--bg-light-color))
       padding-box,
     linear-gradient(var(--btn-color), var(--btn-color)) border-box;
   border: 1px solid transparent;
@@ -22,7 +22,7 @@
 
 .todo-btn:not(.todo-btn--completed):hover,
 .todo-btn:not(.todo-btn--completed):focus {
-  background: linear-gradient(var(--bg-todo-color), var(--bg-todo-color))
+  background: linear-gradient(var(--bg-light-color), var(--bg-light-color))
       padding-box,
     linear-gradient(
         to bottom right,
@@ -46,7 +46,7 @@
 
 .todo-text {
   letter-spacing: -0.25px;
-  color: var(--text-color-300);
+  color: var(--text-color-100);
   transition: all 0.3s;
 }
 
@@ -66,33 +66,8 @@
 
 .todo-delete-btn:focus {
   outline: none;
-  box-shadow: 0 0 0.2rem 0.15rem var(--shadow-color);
 }
 
 .todo-delete-btn img {
   display: block;
-}
-
-@media (max-width: 40em) {
-  .todo {
-    padding: 1.6rem 2rem;
-  }
-
-  .todo-btn {
-    height: 2rem;
-    width: 2rem;
-    margin-right: 1.2rem;
-  }
-
-  .todo-text {
-    font-size: 1.2rem;
-    line-height: 1.2rem;
-    letter-spacing: -0.17px;
-    max-width: 80%;
-  }
-
-  .todo-delete-btn img {
-    height: 1.2rem;
-    width: 1.2rem;
-  }
 }

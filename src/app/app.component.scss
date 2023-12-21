@@ -5,15 +5,8 @@
   background-position: top center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: var(--bg-color);
-
+  background-color: var(--bg-dark-color);
+ 
   transition: all 0.3s;
   min-height: 100vh;
-}
-
-@media (max-width: 40em) {
-  .main {
-    padding: 4.8rem 2.4rem;
-    background-image: var(--bg-mobile-image);
-  }
 }

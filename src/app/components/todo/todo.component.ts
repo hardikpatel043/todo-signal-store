@@ -34,9 +34,8 @@ import { TodosStore } from './todo.facade';
   }
   
   .todo-main {
-    background-color: var(--bg-todo-color);
+    background-color: var(--bg-light-color);
     border-radius: 0.5rem;
-    box-shadow: 0 3.5rem 5rem -1.5rem var(--shadow-color);
     transition: all 0.3s;
   }
   `,

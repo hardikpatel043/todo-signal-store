@@ -76,41 +76,13 @@ import { TodosStore } from './todo.facade';
   
   .option-btn:hover,
   .option-btn:focus {
-    color: var(--text-color-500);
+    color: var(--text-color-100);
   }
   
   .active {
     color: rgba(58, 124, 253, 1);
   }
   
-  @media (max-width: 40em) {
-    .options-container {
-      padding: 1.6rem 2rem 2.2rem 2rem;
-      position: relative;
-    }
-  
-    .todos-left,
-    .option-btn--secondary {
-      font-size: 1.2rem;
-      line-height: 1.2rem;
-      letter-spacing: -0.17px;
-    }
-  
-    .main-options {
-      width: 100%;
-      position: absolute;
-      right: 0;
-      bottom: calc(-100% - 1.6rem);
-  
-      justify-content: center;
-      padding: 1.5rem 0 1.9rem 0;
-      background-color: var(--bg-todo-color);
-      border-radius: 0.5rem;
-      box-shadow: 0 3.5rem 5rem -1.5rem var(--shadow-color);
-      transition: all 0.3s;
-      z-index: 1;
-    }
-  }
   `,
 })
 

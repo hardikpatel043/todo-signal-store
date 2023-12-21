@@ -23,7 +23,7 @@ import { Component } from '@angular/core';
   styles: `
     .footer {
       padding: 2rem 0;
-      background-color: var(--bg-color);
+      background-color: var(--bg-dark-color);
       transition: all 0.3s;
     }
 
@@ -36,25 +36,14 @@ import { Component } from '@angular/core';
       text-decoration: none;
       font-weight: 700;
       letter-spacing: -0.19px;
-      color: var(--text-color-300);
+      color: var(--text-color-100);
       transition: all 0.3s;
     }
 
     .attribution a:hover, .attribution a:active {
-      color: var(--text-color-500);
+      color: var(--text-color-100);
     }
 
-    @media (max-width: 40em) {
-      .footer {
-        padding: 1.6rem 0;
-      }
-
-      .attribution, .attribution a:link, .attribution a:visited  {
-        font-size: 1rem;
-        line-height: 1.2rem;
-        letter-spacing: -0.17px;
-      }
-    }
   `,
 })
 export class FooterComponent { }

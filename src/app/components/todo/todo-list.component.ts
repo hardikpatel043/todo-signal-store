@@ -26,20 +26,12 @@ import { TodoItemComponent } from './todo-item/todo-item.component';
   
   .empty-list-text {
     padding: 2rem 2.4rem;
-    color: var(--text-color-300);
+    color: var(--text-color-100);
     letter-spacing: -0.25px;
     box-shadow: inset 0 -0.1rem 0 0 var(--btn-color);
     transition: all 0.3s;
   }
   
-  @media (max-width: 40em) {
-    .empty-list-text {
-      padding: 1.6rem 2rem;
-      font-size: 1.2rem;
-      line-height: 1.2rem;
-      letter-spacing: -0.17px;
-    }
-  }
   `,
 })
 export class TodoListComponent {
