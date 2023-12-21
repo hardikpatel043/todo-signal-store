@@ -28,7 +28,7 @@ import { Component } from '@angular/core';
     }
 
     .attribution {
-      color: var(--text-color-400);
+      color: var(--text-color-200);
       text-align: center;
     }
 
@@ -36,12 +36,12 @@ import { Component } from '@angular/core';
       text-decoration: none;
       font-weight: 700;
       letter-spacing: -0.19px;
-      color: var(--text-color-100);
+      color: var(--text-color-300);
       transition: all 0.3s;
     }
 
     .attribution a:hover, .attribution a:active {
-      color: var(--text-color-100);
+      color: var(--text-color-300);
     }
 
   `,

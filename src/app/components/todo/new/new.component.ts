@@ -9,7 +9,7 @@ import { v4 } from 'uuid';
   selector: 'personal-new',
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule],
-  template: `<form
+  template: `<form 
       [formGroup]="newTodoForm"
       class="input-wrapper"
       (ngSubmit)="onSubmit()"

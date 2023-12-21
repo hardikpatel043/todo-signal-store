@@ -36,7 +36,6 @@ import { TodosStore } from './todo.facade';
   .todo-main {
     background-color: var(--bg-light-color);
     border-radius: 0.5rem;
-    transition: all 0.3s;
   }
   `,
 })

@@ -30,7 +30,7 @@
   border: none;
   outline: none;
   background: transparent;
-  color: var(--text-color-100);
+  color: var(--text-color-300);
   font-family: inherit;
   font-size: inherit;
   line-height: 1.9rem;
@@ -39,5 +39,5 @@
 }
 
 .todo-input::placeholder {
-  color: var(--text-color-600);
+  color: var(--text-color-100);
 }

@@ -39,7 +39,7 @@ import { TodosStore } from './todo.facade';
     font-size: 1.4rem;
     line-height: 1.4rem;
     letter-spacing: -0.19px;
-    color: var(--text-color-400);
+    color: var(--text-color-200);
     transition: all 0.3s;
   }
   
@@ -57,7 +57,7 @@ import { TodosStore } from './todo.facade';
     border: none;
     outline: none;
     background: transparent;
-    color: var(--text-color-400);
+    color: var(--text-color-200);
     font-family: inherit;
     font-size: 1.4rem;
     line-height: 1.4rem;
@@ -76,7 +76,7 @@ import { TodosStore } from './todo.facade';
   
   .option-btn:hover,
   .option-btn:focus {
-    color: var(--text-color-100);
+    color: var(--text-color-300);
   }
   
   .active {
