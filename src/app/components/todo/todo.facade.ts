@@ -1,5 +1,6 @@
 import { computed, inject } from "@angular/core";
 import { patchState, signalStore, withComputed, withHooks, withMethods, withState } from '@ngrx/signals';
+import { setLoaded, setLoading, withLoaderState } from "./loader.feature";
 
 import { Todo } from "src/app/models/todo";
 import { TodoOption } from "src/app/models/todo-option";
@@ -24,14 +25,18 @@ export const TodosStore = signalStore(
             }
         })
     })),
+    withLoaderState(),
     withMethods((state) => {
         const { todos } = state;
         const todoService = inject(TodoService);
 
         return {
             load: async () => {
+                patchState(state, setLoading());
                 const todos = await todoService.getTodos();
                 patchState(state, { todos });
+                patchState(state, setLoaded());
+
             },
             toggleTodo: (id: number) => {
                 patchState(state, {

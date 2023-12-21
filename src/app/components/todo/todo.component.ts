@@ -11,15 +11,21 @@ import { TodosStore } from './todo.facade';
   selector: 'personal-todo',
   standalone: true,
   imports: [CommonModule, TodoOptionsComponent, TodoListComponent, TodoHeaderComponent, NewComponent],
-  template: `<section class="todo-card">
+  template: `
+  @if( loaded()){
+  <section class="todo-card">
               <personal-todo-header></personal-todo-header>
               <personal-new></personal-new>
-
-              <main class="todo-main">
+                <main class="todo-main">
                 <personal-todo-list [todos]="todos()"></personal-todo-list>
                 <personal-todo-options [todosLeft]="todosLeft()"></personal-todo-options>
-              </main>
+              </main>  
+              
             </section>
+          }@else{
+            ...Loading
+          }
+         
 `,
   styles: `
   .todo-card {
@@ -40,4 +46,5 @@ export class TodoComponent {
   todoStore = inject(TodosStore);
   todosLeft = this.todoStore.left;
   todos = this.todoStore.filteredTodos;
+  loaded = this.todoStore.loaded;
 }
