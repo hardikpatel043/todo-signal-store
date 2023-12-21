@@ -1,12 +1,8 @@
 .main {
-  padding: 7rem 0 11.5rem 0;
-
-  background-image: var(--bg-desktop-image);
+  background-image: url('../assets/images/bg-desktop-light.jpg');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: var(--bg-dark-color);
- 
-  transition: all 0.3s;
+  background-color: white; 
   min-height: 100vh;
 }

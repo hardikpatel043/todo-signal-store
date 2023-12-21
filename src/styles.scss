@@ -15,25 +15,3 @@ body {
   line-height: 1.8rem;
 }
 
-:root {
-  &,
-  &.light-mode {
-    --bg-desktop-image: url('assets/images/bg-desktop-light.jpg');
-    --bg-check-icon: url('assets/images/icon-check-light.svg');
-    --bg-dark-color: rgb(224, 214, 250);
-    --bg-light-color: rgb(255, 255, 255);
-    --text-color-300: rgba(57, 58, 75, 1);
-    --text-color-200: rgba(148, 149, 165, 1);
-    --text-color-100: rgba(209, 210, 218, 1);
-  }
-
-  &.dark-mode {
-    --bg-desktop-image: url('assets/images/bg-desktop-dark.jpg');
-    --bg-check-icon: url('assets/images/icon-check-dark.svg');
-    --bg-dark-color: rgb(24, 25, 33);
-    --bg-light-color: rgba(37, 39, 61, 1);
-    --text-color-300: rgba(200, 203, 231, 1);
-    --text-color-200: rgba(91, 94, 126, 1);
-    --text-color-100: rgba(77, 80, 103, 1);
-  }
-}
